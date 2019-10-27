@@ -1,4 +1,5 @@
-# Gaia Sustentável
+![Gaia Sustentável](https://raw.githubusercontent.com/Caroline-Stelitano/gaia-sustentavel/master/gaia.png)
+### Gaia Sustentável
 
 Esse é um projeto de marketplace de produtos sustentáveis.  
 O projeto vai permitir que usuários possam comprar e vender produtos através da plataforma.

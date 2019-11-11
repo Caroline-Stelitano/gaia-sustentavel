@@ -1,0 +1,104 @@
+
+CSS DO HEADER
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu {
+    background-color: white;
+}
+
+.top-menu>ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-menu>ul>li>a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.btn {
+    background-color: #54775e;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.nav-link {
+    color: #54775e;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #54775e;
+}
+
+
+footer{
+	height: 250px;
+	background-color: #54775e;
+	color:#FFF;
+	margin-top: auto;
+}
+
+footer>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>div>.bottom-menu {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+footer>div>.bottom-menu>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+footer>img {
+    width: 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer hr {
+    width: 1200px;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer>div>ul>li>a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+#adicionar {
+    margin-left: 95px;
+    margin-top: 20px;
+    width: 30%;
+    
+    
+   
+
+}

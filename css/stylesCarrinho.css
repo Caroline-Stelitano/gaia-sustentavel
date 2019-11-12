@@ -76,11 +76,17 @@ nav button {
     font-size: 18px;
 }
 
+.info-dados button {
+    background-color: #54775e;
+}
+
 /* Resumo do pedido */
 
 
 
 /* Footer */
+/* footer */
+
 footer{
 	height: 250px;
 	background-color: #54775e;
@@ -88,18 +94,18 @@ footer{
 	margin-top: auto;
 }
 
-footer>div {
+footer>.container>div {
     display: flex;
     justify-content: space-between;
 }
 
-footer>div>.bottom-menu {
+footer .bottom-menu {
     padding: 0;
     margin: 0;
     display: block;
 }
 
-footer>div>.bottom-menu>li>a {
+footer .bottom-menu>li>a {
     text-decoration: none;
     color: white;
 }
@@ -110,10 +116,6 @@ footer>img {
     justify-content: flex-start;
 }
 
-footer hr {
-    width: 1200px;
-}
-
 footer ul {
     padding: 0;
     margin: 0;
@@ -122,7 +124,49 @@ footer ul {
     justify-content: flex-end;
 }
 
-footer>div>ul>li>a {
+footer>.container>div>ul>li>a {
     text-decoration: none;
     padding: 5px;
+}
+
+/* header responsivo */
+
+@media (max-width: 751px) {
+    nav {
+        margin-bottom: 0;
+    }
+
+    nav>ul {
+		flex-direction: column;
+		height: 0;
+		overflow: hidden;
+	}
+	
+	nav>ul>li>a {
+		width: 100%;
+		text-align: center;
+	}
+
+	nav>button {
+		display: block;
+        width: 100%;
+        padding: 20px;
+		border: none;
+		background-color: transparent;
+		outline: none;
+        cursor: pointer;
+	}
+}
+
+@media (max-width: 570px) {
+    header>.navbar {
+        flex-direction: column;
+    }
+
+    header>.navbar>form {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 15px;
+    }
+    
 }

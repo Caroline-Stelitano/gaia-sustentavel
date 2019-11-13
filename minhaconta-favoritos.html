@@ -8,12 +8,12 @@
     <title>Minha Conta</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/stylesMinhaconta.css">
+    <link rel="stylesheet" href="./css/stylesMinhaConta.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container top-menu font-weight-bold">
+    <div class="container top-menu font-weight-bold mt-1">
         <ul>
             <li><a href=""><i class="material-icons">
                         favorite
@@ -21,29 +21,35 @@
             <li><a href=""><i class="material-icons">
                         shopping_basket
                     </i></a></li>
-            <li>|</li>
-            <li><a href="">Login</a></li>
-            <li><a href="">Cadastro</a></li>
+            <li><a href=""><i class="material-icons">
+                        person
+                    </i></a></li>
         </ul>
     </div>
+
     <header>
         <nav class="container navbar navbar-light">
-            <a class="navbar-brand p-0 m-0"><img src="./img/gaia-branco.png" alt="Logo de Gaia sustentável"></a>
+            <a class="navbar-brand p-0 m-0" href="index.html"><img src="./img/logo/gaia-branco.png"
+                    alt="Logo de Gaia sustentável"></a>
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Digite a sua busca..."
                     aria-label="Search">
-                <button class="btn my-2 my-sm-0 text-light" type="submit">Buscar</button>
+                <button class="btn p-0" type="submit">
+                    <i class="material-icons align-middle">
+                        search
+                    </i>
+                </button>
             </form>
         </nav>
     </header>
-    <nav class="border-top mb-3">
+
+    <nav class="border-top border-bottom mb-3">
         <ul class="nav container justify-content-around mt-3">
             <li class="nav-item">
-                <a class="nav-link font-weight-bold" href="#">Home</a>
+                <a class="nav-link" href="index-logado.html" style="color: #54775e;">Página Inicial</a>
             </li>
         </ul>
     </nav>
-    <hr>
 
     <div class="page container">
         <aside>
@@ -60,39 +66,21 @@
 
         <main>
             <h3>Meus Favoritos</h3>
-            <div class="fav-wrapper">
-                <!-- <div>                
-                    <tr>
-                        <td>
-                            <div>
-                                <input type="checkbox" name="fav" id="fav">
-                            </div>
-                        </td>
-                        <td>
-                            <img src="./img/p2.jpg"  width="50" height="100" alt="desodorante">
-                        </td>
-                        <td>
-                            <p>Desodorante</p>
-                            <p>Stick</p>
-                            <p>35,00</p>
-                        </td>
-                    </tr>
-                </div> -->
-
+            <div class="row">
                 <div class="fav-item col-lg-6">
                     <div class="card text-center" style="width: 16rem">
                         <input type="checkbox" name="fav" value="1" id="fav1" class="fav-check">
                         <label for="fav1" class="fav-image-label">
                             <img src="./img/produto2.png" class="card-img-top account-image" alt="...">
                         </label>
-                        <span class="topbar">
-                            <a href="#" class="float-right"><i class="mr-3 material-icons">favorite</i></a>
-                        </span>
                         <figcaption class="info-wrap border-top"></figcaption>
                         <div class="card-body">
                             <h5 class="card-title text-center">Desodorante</h5>
                             <p class="card-text text-center">Stick</p>
                             <p class="card-text">R$ 35,00</p>
+                            <span class="topbar">
+                                <a href="#" class="float-right"><i class="mr-3 material-icons">favorite</i></a>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -103,14 +91,14 @@
                         <label for="fav2" class="fav-image-label">
                             <img src="./img/produto4.png" class="card-img-top account-image" alt="...">
                         </label>
-                        <span class="topbar">
-                            <a href="#" class="float-right"><i class="mr-3 material-icons">favorite</i></a>
-                        </span>
                         <figcaption class="info-wrap border-top"></figcaption>
                         <div class="card-body">
                             <h5 class="card-title text-center">Hidratante Capilar</h5>
                             <p class="card-text text-center">Água de coco</p>
                             <p class="card-text">R$ 65,00</p>
+                            <span class="topbar">
+                                <a href="#" class="float-right"><i class="mr-3 material-icons">favorite</i></a>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -123,14 +111,14 @@
                         <label for="fav2" class="fav-image-label">
                             <img src="./img/produto4.png" class="card-img-top account-image" alt="...">
                         </label>
-                        <span class="topbar">
-                            <a href="#" class="float-right"><i class="mr-3 material-icons">favorite</i></a>
-                        </span>
                         <figcaption class="info-wrap border-top"></figcaption>
                         <div class="card-body">
                             <h5 class="card-title text-center">Hidratante Capilar</h5>
                             <p class="card-text text-center">Água de coco</p>
                             <p class="card-text">R$ 65,00</p>
+                            <span class="topbar">
+                                <a href="#" class="float-right"><i class="mr-3 material-icons">favorite</i></a>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -141,23 +129,25 @@
 
     <footer class="mt-5">
         <div class="container">
-            <img src="./img/gaia-verde.png" class="rounded float-left" alt="...">
-            <ul class="bottom-menu mt-4">
-                <li><strong>Gaia sustentável</strong></li>
-                <li><a href="">Quem somos</a></li>
-                <li><a href="">Como funciona</a></li>
-                <li><a href="">Fale conosco</a></li>
-            </ul>
-        </div>
-        <hr>
-        <div class="container">
-            <p class="m-0"><i class="material-icons">copyright</i> 2019. Todos os direitos reservados.</p>
-            <ul>
-                <li><a href=""><img src="./img/icon-facebook.png"></a></li>
-                <li><a href=""><img src="./img/icon-instagram.png"></a></li>
-                <li><a href=""><img src="./img/icon-twitter.png"></a></li>
-                <li><a href=""><img src="./img/icon-rss.png"></a></li>
-            </ul>
+            <div>
+                <img src="./img/logo/gaia-verde.png" class="rounded float-left" alt="...">
+                <ul class="bottom-menu mt-4">
+                    <li><strong>Gaia sustentável</strong></li>
+                    <li><a href="./quem-somos.html">Quem somos</a></li>
+                    <li><a href="./como-funciona.html">Como funciona</a></li>
+                    <li><a href="./fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div>
+                <p class="m-0"><i class="material-icons">copyright</i> 2019. Todos os direitos reservados.</p>
+                <ul>
+                    <li><a href="https://facebook.com"><img src="./img/rede-social/icon-facebook.png"></a></li>
+                    <li><a href="https://instagram.com"><img src="./img/rede-social/icon-instagram.png"></a></li>
+                    <li><a href="https://twitter.com"><img src="./img/rede-social/icon-twitter.png"></a></li>
+                    <li><a href=""><img src="./img/rede-social/icon-rss.png"></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

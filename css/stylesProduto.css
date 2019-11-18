@@ -120,6 +120,23 @@ nav button {
     color: #8fccb8;
 }
 
+/* incluir produto */
+
+.img-incluir {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.incluir p {
+    font-size: small;
+}
+
+.btn-cadastro {
+    background-color: #54775e;
+}
+
 /* footer */
 
 footer{

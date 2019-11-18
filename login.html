@@ -11,48 +11,45 @@
     <style>
         .btn {
             background-color: #54775e;
-        }   
+        }
     </style>
-    <title>Gaia Sustentável - Cadastro</title>
+    <title>Gaia Sustentável</title>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="container">
-            <div class="d-flex flex-row justify-content-center col-lg-12 col-md-6 col-sm-3">
-                <header>
-                    <a href="./index.html"><img src="./img/logo/gaia-branco.png" alt="Gaia Sustentável"></a>
-                </header>
-            </div>
-        </div>
-    
-        <div class="container">
-            <div class="row d-flex justify-content-center" style="height: 100px;">
-                <span class="align-self-center"><h5>Faça o seu Login:</h5></span>
-            </div>
-        </div>
-    
-        <div class="container">
-            <form>
-                <label for="email">E-mail</label>
-                <input class="form-control mb-3 d-flex justify-content-center" name="email" type="email" id="email" placeholder="Digite seu E-mail" required>
-                
-                <label for="senha">Senha</label>
-                <input class="form-control mb-3 d-flex justify-content-center" name="senha" type="password" id="senha" placeholder="Digite sua Senha" required>        
-                
-            </form>
+    <div class="container">
+        <div class="d-flex flex-row justify-content-center col-lg-12 col-md-6 col-sm-3">
+            <header>
+                <a href="./index.html"><img src="./img/logo/gaia-branco.png" alt="Gaia Sustentável"></a>
+            </header>
         </div>
 
+        <div class="row d-flex justify-content-center" style="height: 100px;">
+            <span class="align-self-center">
+                <h5>Faça o seu Login:</h5>
+            </span>
+        </div>
+
+        <form>
+            <label for="email">E-mail</label>
+            <input style="width: 500px;" class="form-control mb-3" name="email" type="email" id="email"
+                placeholder="Digite seu E-mail" required>
+
+            <label for="senha">Senha</label>
+            <input style="width: 300px;" class="form-control mb-3" name="senha" type="password" id="senha"
+                placeholder="Digite sua Senha" required>
+        </form>
+
         <div class="btn-produto d-flex justify-content-around">
-            <a href="./index-logado.html"><button type="button" class="btn text-light my-5">Enviar</button></a>
+            <a href="./index-logado.html"><button type="button" class="btn text-light mt-5">Enviar</button></a>
         </div>
-    
-        <div class="container">
-            <div class="row d-flex justify-content-center" style="height: 350px;">
-                <a href="./cadastro.html" class="align-self-center text-dark"><h5>Ainda não é cadastrado? Faça seu cadastro.</h5></a> 
-            </div>
+
+        <div class="row d-flex justify-content-center mt-5">
+            <h5>Ainda não é cadastrado? <a class="align-self-center text-dark" style="text-decoration: none;"
+                    href="./cadastro.html">Faça seu cadastro.</a></h5>
         </div>
-        
+
     </div>
 </body>
+
 </html>

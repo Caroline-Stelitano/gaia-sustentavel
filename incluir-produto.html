@@ -21,73 +21,100 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/stylesProduto.css">
 </head>
 
 <body>
 
-    <!-- logo // -->
+    <div class="container top-menu font-weight-bold mt-1">
+        <ul>
+            <li><a href="#"><i class="material-icons">
+                        favorite
+                    </i></a></li>
+            <li><a href="#"><i class="material-icons">
+                        shopping_basket
+                    </i></a></li>
+            <li><a href="login.html"><i class="material-icons">
+                        person
+                    </i></a></li>
+        </ul>
+    </div>
+
     <header>
         <nav class="container navbar navbar-light">
-            <a class="navbar-brand p-0 m-0"><img src="./img/gaia-branco.png" alt="Logo de Gaia sustentável"></a>
+            <a class="navbar-brand p-0 m-0" href="index.html"><img src="./img/logo/gaia-branco.png"
+                    alt="Logo de Gaia sustentável"></a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Digite a sua busca..."
+                    aria-label="Search">
+                <button class="btn p-0" type="submit">
+                    <i class="material-icons align-middle">
+                        search
+                    </i>
+                </button>
+            </form>
+        </nav>
     </header>
 
-    <!-- container início -->
+    <div class="titulo">
+        <span class="container d-block">
+            <h5>Passo 1: Fotos do Produto</h5>
+        </span>
+    </div>
 
     <div class="container">
-        <span class="shadow-sm d-block p-2 bg-light text-dark text-center"><h5>Passo 1 - Fotos do Produto</h5></span>
-        <br />
-        <h5>Especificações </h5>
-        <br />
-        <ul>
-            <li>Limite de 5 fotos</li>
-            <li>Medidas: Mínimo de 580 pixels e máximo de 9000 pixels. Recomendamos 1000 pixels.</li>
-            <li>Formato e peso: JPEG até 10MG</li>
-        </ul>
-        <br />
-        <div class="jumbotron">
+        <div class="jumbotron mt-5">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                        <!-- card // -->
-                        <img id="adicionar" src="./img/adicionar.png" class="card-img-top" alt="...">
+                <div class="col-md-6">
+                    <div class="card incluir">
+                        <img src="./img/round_add_a_photo_black_48dp.png" class="card-img-top img-incluir"
+                            alt="Botão de selecionar imagens">
                         <div class="card-body">
-                            <!-- card-body // -->
-                            <p class="card-text">Ao clicar no botão abaixo, use as teclas CTRL ou SHIFT para selecionar
-                                até
-                                5 fotos simultaneamente.</p>
+                            <p class="text-center"><b>Capriche! As fotos são a primeira impressão que o cliente terá
+                                    sobre seu produto!</b>
+                            </p>
+                            <p class="card-text text-center">Dica: utiliza os botões CTRL + SHIFT para selecionar
+                                mais de uma imagem.
+                            </p>
                             <form>
                                 <div class="form-group">
-                                    <!-- inicio form adicionar foto // -->
-                                    <label for="exampleFormControlFile1">Adicionar foto</label>
                                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                                </div><!-- form adicionar foto // -->
+                                </div>
                             </form>
-                        </div><!-- fim card-body // -->
-                    </div><!-- fim card // -->
-                </div><!-- fim card md 4// -->
-                <br />
-                <div class="col-md-4">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h5>Especificações</h5>
                     <ul>
-                        <h3>Dicas</h3>
-                        <li>Publique fotos sem texto.</li>
-                        <li>Verifique a nitidez, as cores e o brilho das fotos.</li>
-                        <li>Capriche! As fotos são a primeira impressão que o cliente terá sobre seu produto!</li>
+                        <li><b>Quantidade:</b> limite de 5 fotos por produto</li>
+                        <li><b>Tamanho:</b> mínimo de 580 pixels e máximo de 9000 pixels. Recomendamos 1000 pixels;
+                        </li>
+                        <li><b>Formato:</b> só serão aceitados arquivos com extensão .jpg e/ou .jpeg;</li>
+                        <li><b>Peso:</b> as fotos poderão ter no máximo 10MB.</li>
                     </ul>
-                </div><!-- fim card md 4// -->
-            </div><!-- fim row// -->
-        </div><!-- fim jumbotron // -->
+                </div>
 
+            </div>
+        </div>
+    </div>
 
-        <span class="shadow-sm d-block p-2 bg-light text-dark text-center"><h5>Passo 2 - Dados do Produto</h5></span>
-        <br />
+    <div class="titulo mb-5">
+        <span class="container d-block">
+            <h5>Passo 2: Informações do Produto</h5>
+        </span>
+    </div>
+
+    <div class="container">
         <div class="form-group">
             <label for="exampleFormControlSelect1">Categoria</label>
             <select class="form-control" id="exampleFormControlSelect1">
                 <option>Higiene Pessoal</option>
                 <option>Casa e ambiente</option>
             </select>
-        </div><!-- categoria // -->
+        </div>
+
         <h6>Especificações</h6>
         <form>
             <div class="form-row">
@@ -125,9 +152,16 @@
                 </div>
             </div><!-- fim form-row // -->
         </form>
-        <br />
-        <span class="shadow-sm d-block p-2 bg-light text-dark text-center"><h5>Passo 3 - Opções de frete</h5></span>
-        <br />
+    </div>
+
+
+    <div class="titulo mt-5 mb-5">
+        <span class="container d-block">
+            <h5>Passo 3: Opções de Frete</h5>
+        </span>
+    </div>
+
+    <div class="container">
         <div class="form-check">
             <!-- frete // -->
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -146,11 +180,8 @@
             <label class="form-check-label" for="defaultCheck2">Frete Grátis acima de um valor mínimo</label>
         </div>
         <br />
-        <button type="submit" class="btn btn-primary mb-2">Cadastrar produto</button>
-
-
-    </div><!-- container // -->
-
+        <button type="submit" class="btn btn-cadastro  text-light mb-2">Cadastrar produto</button>
+    </div>
 
 </body>
 
